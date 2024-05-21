@@ -33,6 +33,16 @@
         td.num{
             text-align: right;
         }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+
+        tbody > tr:nth-child(2n-1) {
+            background-color: rgb(179, 179, 179);
+        } /*odd - impar; even-par; 2n or 2n-1 */
+
     </style>
 </head>
 <body>
@@ -41,8 +51,8 @@
         <caption>População das unidades Federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -81,7 +91,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>84 847 187</strong></td>
             </tr>
         </tfoot>
